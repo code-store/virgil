@@ -1,0 +1,44 @@
+@charset "utf-8";
+/* CSS Document */
+
+#widget_gallery{
+	background: none repeat scroll 0 0 white;
+   /*border: 1px solid #2B528E;
+    border-radius: 8px 8px 8px 8px;*/
+    float: left;
+    margin-top: 20px;
+    padding: 0;
+    width: 99%;
+}
+
+#widget_gallery .widget_head{
+	background: none repeat scroll 0 0 #2B528E;
+    color: white;
+    float: none;
+    margin: 0 auto;
+    padding: 10px;
+	border-radius:8px 8px 0px 0px;
+    width: auto;
+}
+
+#widget_gallery .widget_content{
+	background: none;
+    padding: 10px;
+    width: auto;
+	float:left;
+}
+
+#widget_gallery .widget_content a{
+	text-align:left;
+	float:left;
+	color:black;
+	border:1px solid #eee;
+	padding:4px;
+	margin:3px;
+	min-height:120px;
+}
+
+#widget_gallery .widget_content a img{
+	width:120px;
+	max-height:120px;
+}
