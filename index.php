@@ -1,7 +1,7 @@
 <?php
 /** Index page **/
 include_once('config.php');
-echo 'i am index';
+//echo 'i am index';
 	$sql = "SELECT * FROM webpages WHERE is_home=1";
 
 	$result = mysql_query($sql);
