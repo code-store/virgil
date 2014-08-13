@@ -1,0 +1,16 @@
+<IfModule mod_rewrite.c>
+RewriteEngine On
+#RewriteCond %{HTTP_HOST} !^www\.
+#RewriteRule ^(.*)$ http://www.%{HTTP_HOST}/$1 [R=301,L]
+DirectoryIndex home.html
+RewriteRule (([^/]*)\.html) deliverPage.php?url=$1 [L]
+
+
+#RewriteRule ^(.*)\.html$ /deliverPage.php?url=$1.html  [R=301,L]
+#RewriteRule ^([a-zA-Z]+)/([^/]*)\.html$ deliverPage.php?url=$2.html&lang=$1 [L]
+#RewriteRule ^([^/]*)\.html$ /deliverPage.php?url=$1.html [L]
+RewriteRule admin admin.php
+RewriteRule this_adminer.php  this_adminer.php 
+#RewriteRule ^([^/]*)\.htm$ form.php?url=$1 [L]
+#RewriteRule ^([^/]*)\.htm$ form_middle.php?url=$1 [L]
+</IfModule>
