@@ -1,0 +1,471 @@
+
+html {
+	/*background-color: #eee;*/
+}
+
+body {
+	/*color: #333;
+	background-color: #fff;
+	font-size: 13px;
+	font-family: "Helvetica Neue", Corbel, "Nimbus Sans L", Helvetica, Arial, sans-serif;
+	padding: 2em 4em;
+	width: 860px;
+	margin: 0 auto;*/
+}
+
+pre, code {
+	font-size: 12px;
+}
+
+pre {
+	width: 100%;
+	overflow: auto;
+}
+
+small {
+	font-size: 90%;
+}
+
+small code {
+	font-size: 11px;
+}
+
+
+
+h1 {
+	font-size: 2em;
+	margin-bottom: 0;
+}
+
+
+h3 {
+	font-size: 1em;
+	margin: 1em 0 .3em;;
+}
+
+p, ol, ul, pre, form {
+	margin-top: 0;	
+}
+
+dl {
+	margin: 0;
+}
+
+dd {
+	margin: 0;
+	padding: 0 0 0 1.5em;
+}
+
+code {
+	background: #e5e5e5;
+}
+
+input {
+	vertical-align: text-bottom;
+}
+
+ol, ul {
+	margin: 0;
+	padding: 0;	
+}
+
+
+
+
+/******************************************************************
+ Global CSS Styles
+******************************************************************/
+
+.simple_menu, 
+.simple_menu ol, 
+.simple_menu ul {
+	margin: 0 0 0 25px;
+	padding: 0;
+	list-style-type: none;
+}
+
+.simple_menu ol, 
+.simple_menu ul {
+	-webkit-box-shadow: 1px 1px 3px 1px rgba(0, 0, 0, 0.3);
+	-moz-box-shadow: 1px 1px 3px 1px rgba(0, 0, 0, 0.3);
+	box-shadow: 1px 1px 3px 1px rgba(0, 0, 0, 0.3); 
+}
+
+
+
+
+/******************************************************************
+ HORIZONTAL specific CSS Styles
+******************************************************************/
+
+.horizontal ol, 
+.horizontal ul {
+	display: none;
+	position: absolute;
+	margin: 1px 0 0 1px;
+	z-index: 9999;
+}
+
+.horizontal ol li ol, 
+.horizontal ul li ul {
+	display: none;
+	position: absolute;
+	margin: -28px 0 0 165px;
+}
+
+.horizontal {
+	display: table;
+    float: none;
+    margin: 0 auto;
+}
+
+
+.horizontal li {
+	display: block;
+	float: left;
+}
+
+.horizontal li ol li, .horizontal li ol li ol li, .horizontal li ol li ol li ol li,
+.horizontal li ul li, .horizontal li ul li ul li, .horizontal li ul li ul li ul li  {
+	display: block;
+	float: none;
+	width: 160px;
+}
+
+.horizontal li a {
+	padding: 5px 10px 5px 10px;
+	margin: 0;
+	border-top-width: 1px;
+	border-top-style: solid;
+	border-left-width: 1px;
+	border-left-style: solid;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+}
+
+.horizontal li li a {
+	padding: 5px 10px 5px 10px;
+	margin: 0;
+	border-top-width: 0px;
+	border-left-width: 1px;
+	border-left-style: solid;
+	border-right-width: 1px;
+	border-right-style: solid;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+}
+
+.horizontal li.last {
+	clear: right;
+}
+
+.horizontal li.last a {
+	/*border-right-width: 1px;
+	border-right-style: solid;*/
+}
+
+.horizontal li ol li.first a, .horizontal li ol li ol li.first a, 
+.horizontal li ul li.first a, .horizontal li ul li ul li.first a {
+	/*border-top-width: 1px;
+	border-top-style: solid;*/
+}
+
+
+
+
+/******************************************************************
+ VERTICAL specific CSS Styles
+******************************************************************/
+
+.vertical ol, 
+.vertical ul {
+	display: none;
+	position: absolute;
+	margin: -28px 0 0 165px;
+	z-index: 9999;
+}
+
+.vertical {
+	margin: 0;
+	width: 160px;
+}
+
+.vertical li {
+	display: block;
+	width: 160px;
+}
+
+.vertical li a {
+	padding: 5px;
+	margin: 0;
+	width: 150px;
+	border-left-width: 1px;
+	border-left-style: solid;
+	border-right-width: 1px;
+	border-right-style: solid;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+}
+
+.vertical li.first a, .vertical li ol li.first a, .vertical li ol li ol li.first a, 
+.vertical li.first a, .vertical li ul li.first a, .vertical li ul li ul li.first a {
+	border-top-width: 1px;
+	border-top-style: solid;
+}
+
+
+
+
+/******************************************************************
+ Sub menu arrow indicator CSS ICON - NO IMAGES
+******************************************************************/
+
+.simple_menu li a span.r {
+	float: right;
+	border: 0.4em solid #888;
+	border-right-color: transparent;
+	border-top-color: transparent;
+	border-bottom-color: transparent;
+	height: 0.001em;
+	width: 0.001em;
+	margin: 3px 0 0 0;
+}
+
+.simple_menu li a span.b {
+	float: right;
+	border: 0.4em solid #888;
+	border-right-color: transparent;
+	border-bottom-color: transparent;
+	border-left-color: transparent;
+	height: 0.001em;
+	width: 0.001em;
+	margin: 7px -5px 0 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/******************************************************************
+ COLOR SETUP
+******************************************************************/
+
+
+/* default */
+.simple_menu li a {
+	color: #666;
+}
+
+.simple_menu li a {
+	/*display: block;
+	text-decoration: none;
+	
+	background: #eeeeee;
+	background: -moz-linear-gradient(top, #eeeeee 0%, #cfcfcf 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#eeeeee), color-stop(100%,#cfcfcf));
+	background: -webkit-linear-gradient(top, #eeeeee 0%,#cfcfcf 100%);
+	background: -o-linear-gradient(top, #eeeeee 0%,#cfcfcf 100%);
+	background: -ms-linear-gradient(top, #eeeeee 0%,#cfcfcf 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eeeeee', endColorstr='#cfcfcf',GradientType=0 );
+	background: linear-gradient(top, #eeeeee 0%,#cfcfcf 100%);
+	
+	border-color: #bdbdbd;*/
+}
+
+.simple_menu li a:hover, .simple_menu li a.selected {
+	/*background: #eeeeee;
+	background: -moz-linear-gradient(top, #eeeeee 0%, #eeeeee 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#eeeeee), color-stop(100%,#eeeeee));
+	background: -webkit-linear-gradient(top, #eeeeee 0%,#eeeeee 100%);
+	background: -o-linear-gradient(top, #eeeeee 0%,#eeeeee 100%);
+	background: -ms-linear-gradient(top, #eeeeee 0%,#eeeeee 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eeeeee', endColorstr='#eeeeee',GradientType=0 );
+	background: linear-gradient(top, #eeeeee 0%,#eeeeee 100%);
+	color: #666;*/
+}
+
+
+
+
+/* green */
+.green_menu li a {
+	color: #426200;
+}
+
+.green_menu li a {
+	display: block;
+	/*text-decoration: none;
+	
+	background: #cdeb8b;
+	background: -moz-linear-gradient(top, #cdeb8b 0%, #91bc69 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#cdeb8b), color-stop(100%,#91bc69));
+	background: -webkit-linear-gradient(top, #cdeb8b 0%,#91bc69 100%);
+	background: -o-linear-gradient(top, #cdeb8b 0%,#91bc69 100%);
+	background: -ms-linear-gradient(top, #cdeb8b 0%,#91bc69 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cdeb8b', endColorstr='#91bc69',GradientType=0 );
+	background: linear-gradient(top, #cdeb8b 0%,#91bc69 100%);
+	
+	border-color: #82BF00;*/
+}
+
+.green_menu li a:hover, .green_menu li a.selected {
+	/*background: #cdeb8b;
+	background: -moz-linear-gradient(top, #cdeb8b 0%, #cdeb8b 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#cdeb8b), color-stop(100%,#cdeb8b));
+	background: -webkit-linear-gradient(top, #cdeb8b 0%,#cdeb8b 100%);
+	background: -o-linear-gradient(top, #cdeb8b 0%,#cdeb8b 100%);
+	background: -ms-linear-gradient(top, #cdeb8b 0%,#cdeb8b 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cdeb8b', endColorstr='#cdeb8b',GradientType=0 );
+	background: linear-gradient(top, #cdeb8b 0%,#cdeb8b 100%);
+	color: #666;*/
+}
+
+
+
+/* blue */
+.blue_menu li a {
+	color: #254B72;
+}
+
+.blue_menu li a {
+	/*background: rgb(160,200,229);
+	background: -moz-linear-gradient(top, rgba(160,200,229,1) 0%, rgba(90,167,221,1) 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(160,200,229,1)), color-stop(100%,rgba(90,167,221,1)));
+	background: -webkit-linear-gradient(top, rgba(160,200,229,1) 0%,rgba(90,167,221,1) 100%);
+	background: -o-linear-gradient(top, rgba(160,200,229,1) 0%,rgba(90,167,221,1) 100%);
+	background: -ms-linear-gradient(top, rgba(160,200,229,1) 0%,rgba(90,167,221,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a0c8e5', endColorstr='#5aa7dd',GradientType=0 );
+	background: linear-gradient(top, rgba(160,200,229,1) 0%,rgba(90,167,221,1) 100%);
+	border-color: #2886C4;*/
+}
+
+.blue_menu li a:hover, .blue_menu li a.selected {
+	/*background:  rgb(160,200,229);
+	background: -moz-linear-gradient(top, rgba(160,200,229,1) 0%, rgba(160,200,229,1) 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(160,200,229,1)), color-stop(100%,rgba(160,200,229,1)));
+	background: -webkit-linear-gradient(top, rgba(160,200,229,1) 0%,rgba(160,200,229,1) 100%);
+	background: -o-linear-gradient(top, rgba(160,200,229,1) 0%,rgba(160,200,229,1) 100%);
+	background: -ms-linear-gradient(top, rgba(160,200,229,1) 0%,rgba(160,200,229,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a0c8e5', endColorstr='#a0c8e5',GradientType=0 );
+	background: linear-gradient(top, rgba(160,200,229,1) 0%,rgba(160,200,229,1) 100%);
+	color: #666;*/
+}
+
+
+/* orange */
+.orange_menu li a {
+	color: #6D6103;
+}
+
+.orange_menu li a {
+	/*background: rgb(241,231,103);
+	background: -moz-linear-gradient(top, rgba(241,231,103,1) 0%, rgba(254,182,69,1) 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(241,231,103,1)), color-stop(100%,rgba(254,182,69,1)));
+	background: -webkit-linear-gradient(top, rgba(241,231,103,1) 0%,rgba(254,182,69,1) 100%);
+	background: -o-linear-gradient(top, rgba(241,231,103,1) 0%,rgba(254,182,69,1) 100%);
+	background: -ms-linear-gradient(top, rgba(241,231,103,1) 0%,rgba(254,182,69,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f1e767', endColorstr='#feb645',GradientType=0 );
+	background: linear-gradient(top, rgba(241,231,103,1) 0%,rgba(254,182,69,1) 100%);
+	border-color: #D3BA05;*/
+}
+
+.orange_menu li a:hover, .orange_menu li a.selected {
+	/*background: rgb(241,231,103);
+	background: -moz-linear-gradient(top, rgba(241,231,103,1) 0%, rgba(241,231,103) 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(241,231,103,1)), color-stop(100%,rgba(241,231,103)));
+	background: -webkit-linear-gradient(top, rgba(241,231,103,1) 0%,rgba(241,231,103) 100%);
+	background: -o-linear-gradient(top, rgba(241,231,103,1) 0%,rgba(241,231,103) 100%);
+	background: -ms-linear-gradient(top, rgba(241,231,103,1) 0%,rgba(241,231,103) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f1e767', endColorstr='#f1e767',GradientType=0 );
+	background: linear-gradient(top, rgba(241,231,103,1) 0%,rgba(241,231,103) 100%);
+	color: #666;*/
+}
+
+
+
+
+
+
+
+/******************************************************************
+ This is just for JavaScript fall back hovers
+******************************************************************/
+
+.simple_menu_css li:hover ol, 
+.simple_menu_css li:hover ul {
+	display: block;
+}
+
+.simple_menu_css li:hover ol ol, 
+.simple_menu_css li:hover ul ul {
+	display: none;
+}
+
+.simple_menu_css ol li:hover ol, 
+.simple_menu_css ul li:hover ul {
+	display: block;
+}
+
+.simple_menu_css ol li:hover ol ol, 
+.simple_menu_css ul li:hover ul ul {
+	display: none;
+}
+
+.simple_menu_css ol ol li:hover ol, 
+.simple_menu_css ul ul li:hover ul {
+	display: block;
+}
+
+.simple_menu_css ol ol li:hover ol ol, 
+.simple_menu_css ul ul li:hover ul ul {
+	display: none;
+}
+
+.simple_menu_css ol ol ol li:hover ol, 
+.simple_menu_css ul ul ul li:hover ul {
+	display: block;
+}
+
+.simple_menu_css ol ol ol li:hover ol ol, 
+.simple_menu_css ul ul ul li:hover ul ul {
+	display: none;
+}
+
+.simple_menu_css ol ol ol ol li:hover ol, 
+.simple_menu_css ul ul ul ul li:hover ul {
+	display: block;
+}
+
+.simple_menu_css ol ol ol ol li:hover ol ol, 
+.simple_menu_css ul ul ul ul li:hover ul ul {
+	display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

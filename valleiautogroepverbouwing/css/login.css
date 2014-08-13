@@ -1,0 +1,78 @@
+@charset "utf-8";
+/* CSS Document */
+html, body {height: 100%;}
+*{ margin:0; padding:0; text-decoration:none; list-style:none; outline:none; border:none; }
+body{ background:url(../images/admin-bg.jpg) repeat 0 0; font:normal 12px/18px 'Rockwell'; color:#929191; }
+img{border:0;}
+a{text-decoration:none; outline:0;}
+a img{border:0; outline:0;}
+input, textarea, select{outline:0;}
+h1, h2, h3, h4, h5, h6{font-family:'pt_sansbold';}
+
+.left{float:left;}
+.right{float:right;}
+.clear{clear:both;}
+.spacer{clear:both; display:block; line-height:0; font-size:0;}
+@font-face {
+	font-family: 'Rockwell';
+	src: url('../fonts/rock.eot');
+	src: url('../fonts/rock.eot?#iefix') format('embedded-opentype'),
+			 url('../fonts/rock.woff') format('woff'),
+			 url('../fonts/rock.ttf') format('truetype'),
+			 url('../fonts/rock.svg#rock') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+.wrapper{ width:100%; float:left; margin: 0 auto -34px; height: auto !important; min-height:100%; }
+
+
+.header-main{ width:447px; margin:0 auto; }
+.header{ width:447px; float:left; height:214px;}
+
+.logo{ width:447px; height:162px; float:left; margin:15px 0 0 0;  }
+.logo a{ width:447px; height:162px; background:url(../images/logo.png) no-repeat 0 0; display:block; text-indent:-99999px; }
+
+.login-outer{ width:100%; float:left; background:url(../images/login-bg.png) repeat-x 0 0; }
+.login-inner{ width:447px; margin:0 auto; }
+.login{ width:407px; float:left; height:278px; margin:0 40px 49px 0; }
+
+.log-title{ width:39px; float:left; }
+.log-title img{ float:left; margin:65px 0 0 0; }
+
+.form{ width:319px; float:left; background:url(../images/form-bg.png) no-repeat 0 0; height:233px; padding:45px 25px 0 24px; } 
+
+.form input[type="text"], input[type="password"]{ width:246px; height:22px; background:transparent; padding:10px; font:normal 15px/22px 'Rockwell'; color:#8d8e8e;  }
+
+.user{ width:266px; height:42px; float:left; background:url(../images/user.png) no-repeat 0 0; margin:0 0 24px 0; padding:0 0 0 53px; }
+.password{ width:266px; height:42px; float:left; background:url(../images/password.png) no-repeat 0 0; margin:0 0 24px 0; padding:0 0 0 53px; }
+.log-btn{ width:318px; height:37px; float:left; margin:0 0 15px 0; }
+.log-btn input[type="submit"]{ width:318px; height:37px; background:url(../images/login.png) no-repeat 0 0; font:normal 20px/37px 'Rockwell'; color:#ffffff; text-align:center; display:block; border:none; cursor:pointer; }
+.log-btn input[type="submit"]:hover{ background-position:0 -37px; }
+.log-btn a{ width:318px; height:37px; background:url(../images/login.png) no-repeat 0 0; font:normal 20px/37px 'Rockwell'; color:#ffffff; text-align:center; display:block; border:none; cursor:pointer; }
+.log-btn a:hover{ background-position:0 -37px; }
+.forget{ width:319px; float:left; }
+.forget a{ font:normal 14px/20px 'Rockwell'; color:#edecec; padding:0 0 4px 0; }
+.forget a:hover{ background:url(../images/dot.png) repeat-x 0 bottom; }
+
+.push { height:34px; }
+
+.footer-outer{ width:100%; float:left; background:#272727; }
+.footer-inner{ width:447px; margin:0 auto; }
+.footer{ width:447px; float:left; height:34px; }
+.footer p{ font:normal 12px/34px 'Rockwell'; color:#c7c6c6; text-align:center; }
+
+
+.login-outer-edit{ width:100%; float:left; background:url(../images/login-bg.png) repeat-x 0 0; }
+.login-inner-edit{ margin:0 auto; }
+
+.login-inner-edit .form { background: url("../images/form-bg.png") repeat-x scroll 0 0 transparent;
+    height: 277px;
+    padding-top: 20px;
+    width: 687px;
+    }
+    
+.backto_admin{
+	float: left;
+	margin-top: 85px;
+}    

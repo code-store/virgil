@@ -1,0 +1,25 @@
+/* ######### CSS for Shade Tabs. Remove if not using ######### */
+
+
+.shadetabs li a.selected{ /*selected main tab style */
+color:#ffffff;
+ background:#858584;
+}
+
+.shadetabs li a.selected span{ color:#000000; }
+
+
+.shadetabs li a.selected:hover{ /*selected main tab style */
+text-decoration: none;
+}
+
+.tabcontent{
+display:none;
+}
+
+@media print {
+.tabcontent {
+display:block !important;
+}
+}
+

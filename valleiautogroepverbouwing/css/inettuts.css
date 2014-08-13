@@ -1,0 +1,189 @@
+/* Reset */
+body,img,p,h1,h2,h3,h4,h5,h6,ul,ol {margin:0; padding:0; list-style:none; border:none;}
+/* End Reset */
+
+body {font-size:0.8em; font-family:Arial,Verdana,Sans-Serif;}
+a {color:white;}
+
+/* Colors */
+.color-yellow {background:#f2bc00 !important;}
+.color-red    {background:#dd0000 !important;}
+.color-blue   {background:#148ea4 !important;}
+.color-white  {background:#dfdfdf !important;}
+.color-orange {background:#f66e00 !important;}
+.color-green  {background:#8dc100 !important;}
+.color-yellow h3,
+.color-white h3,
+.color-green h3
+	{color:#000;}
+.color-red h3,
+.color-blue h3,
+.color-orange h3
+	{color:#FFF;}
+/* End Colors */
+
+/* Head section */
+#head {
+    background: #000 url(img/head-bg.png) repeat-x;
+    height: 100px;
+}
+#head h1 {
+    line-height: 100px;
+    color: #FFF;
+    text-align: center;
+    background: url(img/inettuts.png) no-repeat center;
+    text-indent: -9999em
+}
+/* End Head Section */
+
+/* Columns section */
+#columns .column {
+    border: 1px solid #AAAAAA;
+    float: left;
+    height: auto !important;
+    min-height: 200px;
+    width: 95%;
+		
+}
+
+/* Column dividers (background-images) : */
+	#columns #column1 { background: #eee; margin:1px 10px; padding:10px;}
+	#columns #column2 { background: #eee; margin:1px 10px; padding:10px;}
+	#columns #column3 { background: #eee; margin:1px 10px; padding:10px;}
+	#columns #column4 { background: #eee; margin:1px 10px; padding:10px;}
+	
+#columns #column1 .widget { margin: 10px; }
+#columns #column2 .widget { margin: 10px; }
+#columns #column3 .widget { margin: 10px; }
+#columns #column4 .widget { margin: 10px; }
+#columns .widget {
+    margin: 10px;
+    padding: 2px;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+	width:200px;
+}
+#columns .widget .widget-head {
+    color: #000;
+    overflow: hidden;
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+}
+#columns .widget .widget-head h3 {
+    padding: 0 5px;
+    float: left;
+}
+#columns .widget .widget-content {
+    background: #FFFFFF;
+    padding: 0 5px;
+    -moz-border-radius-bottomleft: 2px;
+    -moz-border-radius-bottomright: 2px;
+    -webkit-border-bottom-left-radius: 2px;
+    -webkit-border-bottom-right-radius: 2px;
+    line-height: 1.2em;
+    overflow: hidden;
+	display:none;
+}
+#columns .widget .widget-content p {
+    padding: 0.8em 0;
+    border-bottom: 0px solid #666;
+}
+#columns .widget .widget-content img {
+    float: right;
+    margin: 10px;
+    border: 1px solid #FFF;
+}
+#columns .widget .widget-content pre {
+    padding: 0.5em 5px;
+    color: #EEE;
+    font-size: 12px;
+}
+#columns .widget .widget-content ul {
+    padding: 5px 0 5px 20px;
+    list-style: disc;
+}
+#columns .widget .widget-content ul li {padding: 3px 0;}
+#columns .widget .widget-content ul.images {
+    padding: 7px 0 0 0;
+    list-style: none;
+    height: 1%;
+}
+#columns .widget .widget-content ul.images li {
+    display: inline;
+    float: left;
+}
+#columns .widget .widget-content ul.images img {
+    display: inline;
+    float: left;
+    margin: 0 0 7px 7px;
+}
+/* End Columns section */
+
+
+
+
+/*---------------------------------------------------------------------------------------------------------------*/
+/*-------------------- Needed Changes because other CSS-s are making some noise... ------------------------------*/
+/*---------------------------------------------------------------------------------------------------------------*/
+
+
+#columns{
+	display:table;
+	width:100%;
+}
+
+#columns ul li a {
+    color: #1E1E1E;
+    display: block;
+    font: 14px/36px 'Rockwell';
+	padding:0px;
+}
+
+#columns ul li .edit {
+   display:none;
+}
+
+#columns .widget .widget-head h3 {
+    float: left;
+    padding: 0 5px;
+	margin:0px;
+	font-family: Trebuchet MS,Tahoma,Verdana,Arial,sans-serif;
+    font-size: 0.9em;
+	font-weight:bold;
+	border-bottom:none;
+}
+
+#columns .container-head{
+	background: none repeat scroll 0 0 #434343;
+    color: white;
+    float: left;
+    font-weight: bold;
+    margin: 30px 10px 0;
+    padding: 20px 30px;
+    width: 91.2%;
+}
+
+#columns #column1 #intro{
+	display:none;
+}
+
+
+#columns .widget .widget-content ul li{
+    list-style: disc outside none;
+	background:none;
+}
+
+#columns .widget .widget-content ul li a:hover{
+   color: black;
+}
+
+#columns .widget .widget-content label{
+	width:auto;
+}
+
+#columns .widget .widget-content .actions{
+	width:auto;
+	margin:auto;
+	padding:auto;
+}

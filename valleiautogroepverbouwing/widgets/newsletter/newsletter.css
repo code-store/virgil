@@ -1,0 +1,62 @@
+@charset "utf-8";
+/* CSS Document */
+
+#widget_newsletter{
+	background: none repeat scroll 0 0 #EEEEEE;
+    float: left;
+    margin-top:20px;
+    padding: 0;
+    width: auto;
+	border:1px solid #2B528E;
+	border-radius:8px;
+}
+
+#widget_newsletter .widget_head{
+	background: none repeat scroll 0 0 #2B528E;
+    color: white;
+    float: none;
+    margin: 0 auto;
+    padding: 10px;
+	border-radius:8px 8px 0px 0px;
+    width: auto;
+}
+
+#widget_newsletter .widget_content{
+	background: none;
+    padding: 10px;
+    width: auto;
+	float:left;
+}
+
+#widget_newsletter .widget_content label{
+	padding:5px;
+	line-height:25px;
+	height:22px;
+	min-width:100px;
+	text-align:left;
+	margin:3px;
+	float:left;
+	color:black;
+}
+
+
+#widget_newsletter .widget_content .w_name{
+	padding:5px;
+	float:left;
+	height:22px;
+	margin:3px;
+	max-width:140px;
+}
+
+#widget_newsletter .widget_content .w_mail{
+	padding:5px;
+	height:22px;
+	margin:3px;
+	float:left;
+	max-width:140px;
+}
+
+#widget_newsletter .widget_content .w_submit{
+	padding:5px;
+	width:120px;
+}
